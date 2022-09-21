@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import InputForm from './Components/InputFrom';
+import Table from './Components/Table';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='lg:container mx-auto'>
+      <div className="w-full flex justify-center flex-col items-center">
+        <h2 className="text-3xl font-bold mb-8 mt-2">Ini CRUD</h2>
+        <InputForm/>
+        <Table/>
+      </div>
     </div>
   );
 }
